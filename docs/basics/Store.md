@@ -8,7 +8,7 @@ The **Store** is the object that brings them together. The store has the followi
 * Allows access to state via [`getState()`](../api/Store.md#getState);
 * Allows state to be updated via [`dispatch(action)`](../api/Store.md#dispatch);
 * Registers listeners via [`subscribe(listener)`](../api/Store.md#subscribe);
-* Handles unregistering of listeners via the function returned by [`subscribe(listener)`](../api/Store.md#subscribe).
+* Handles unregistering of listeners via the function returned by [`unsubscribe()`](../api/Store.md#unsubscribe).
 
 It's important to note that you'll only have a single store in a Redux application. When you want to split your data handling logic, you'll use [reducer composition](Reducers.md#splitting-reducers) instead of many stores.
 
